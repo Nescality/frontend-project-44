@@ -1,7 +1,5 @@
 import getRandomNumber from '../utils.js'
-
 const operators = ['+', '-', '*']
-
 const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+': return num1 + num2
@@ -10,7 +8,6 @@ const calculate = (num1, num2, operator) => {
     default: throw new Error(`Unknown operator: ${operator}`)
   }
 }
-
 const generateRound = () => {
   const num1 = getRandomNumber(1, 100)
   const num2 = getRandomNumber(1, 100)
@@ -19,8 +16,6 @@ const generateRound = () => {
   const correctAnswer = calculate(num1, num2, operator).toString()
   return [question, correctAnswer]
 }
-
 const description = 'What is the result of the expression?'
-
 export { generateRound, description }
 
