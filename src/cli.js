@@ -6,4 +6,3 @@ const greetUser = () => {
   return name
 }
 export default greetUser
-

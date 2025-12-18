@@ -19,4 +19,3 @@ const runGame = (description, generateRound) => {
   console.log(`Congratulations, ${name}!`)
 }
 export default runGame
-

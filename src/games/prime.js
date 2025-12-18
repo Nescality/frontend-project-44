@@ -13,4 +13,3 @@ const generateRound = () => {
 }
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 export { generateRound, description }
-
