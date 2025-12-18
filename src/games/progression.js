@@ -26,3 +26,4 @@ const generateRound = () => {
 const description = 'What number is missing in the progression?'
 
 export { generateRound, description }
+
