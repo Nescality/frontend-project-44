@@ -1,4 +1,5 @@
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylistic from '@stylistic/eslint-plugin'
+import globals from 'globals'
 
 export default [
   {
@@ -6,15 +7,18 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
+      globals: {
+        ...globals.node,
+      },
     },
     plugins: {
-      '@stylistic/js': stylisticJs,
+      '@stylistic': stylistic,
     },
     rules: {
-      '@stylistic/js/indent': ['error', 2],
-      '@stylistic/js/linebreak-style': ['error', 'unix'],
-      '@stylistic/js/quotes': ['error', 'single'],
-      '@stylistic/js/semi': ['error', 'always'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/linebreak-style': ['error', 'unix'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'never'],
     },
   },
-];
+]
